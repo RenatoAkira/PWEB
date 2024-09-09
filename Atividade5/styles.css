@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.pagina {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+.nome-cor {
+    font-size: 2rem;
+    color: #fff;
+}
+
+@media (max-width: 420px) {
+    .pagina {
+        background-color: gray;
+    }
+    .nome-cor::after {
+        content: 'Cinza';
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .pagina {
+        background-color: orange;
+    }
+    .nome-cor::after {
+        content: 'Laranja';
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .pagina {
+        background-color: pink;
+    }
+    .nome-cor::after {
+        content: 'Rosa';
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .pagina {
+        background-color: red;
+    }
+    .nome-cor::after {
+        content: 'Vermelho';
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .pagina {
+        background-color: blue;
+    }
+    .nome-cor::after {
+        content: 'Azul';
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 11920px) {
+    .pagina {
+        background-color: yellow;
+    }
+    .nome-cor::after {
+        content: 'Amarelo';
+    }
+}
+
+@media (min-width: 1921px) {
+    .pagina {
+        background-color: green;
+    }
+    .nome-cor::after {
+        content: 'Verde';
+    }
+}
