@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade11</title>
+</head>
+<body>
+    <script>
+        let funcionario1 = {
+        matricula: 12345,
+        nome: "João Silva",
+        funcao: "Desenvolvedor"
+    };
+    alert(`Matrícula: ${funcionario1.matricula}\nNome: ${funcionario1.nome}\nFunção: ${funcionario1.funcao}`);
+
+    function Funcionario1(matricula, nome, funcao) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.funcao = funcao;
+    };
+
+    let funcionario2 = new Funcionario1(67890, "Maria Oliveira", "Analista de Sistemas");
+
+    alert(`Matrícula: ${funcionario2.matricula}\nNome: ${funcionario2.nome}\nFunção: ${funcionario2.funcao}`);
+
+    class Funcionario2 {
+        constructor(matricula, nome, funcao) {
+            this.matricula = matricula;
+            this.nome = nome;
+            this.funcao = funcao;
+        }
+    }
+
+    let funcionario3 = new Funcionario2(11223, "Carlos Souza", "Gerente de Projetos");
+
+    alert(`Matrícula: ${funcionario3.matricula}\nNome: ${funcionario3.nome}\nFunção: ${funcionario3.funcao}`);
+
+    </script>
+</body>
+</html>
