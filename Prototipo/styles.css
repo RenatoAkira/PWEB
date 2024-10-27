@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0e7ff;
+}
+
+header {
+    margin: 20px 0;
+}
+
+h1 {
+    color: #4b0082; 
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.Quadro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.Coluna {
+    background-color: #6a0dad;
+    border-radius: 8px;
+    width: 30%;
+    padding: 15px;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.Coluna h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.Tarefa {
+    background-color: #d1b3ff; 
+    border: 1px solid #a084ca; 
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: grab;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.Tarefa:hover {
+    background-color: #c4a0e0; 
+    transform: scale(1.05);
+}
+
+.Tarefa:active {
+    cursor: grabbing;
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quadro Kanban</h1>
+    </header>
+    
+    <main>
+        <section class="Quadro">
+            <div class="Coluna" id="coluna1">
+                <h2>A Fazer</h2>
+                <div class="Tarefa" draggable="true">
+                    <h3>Tarefa 1</h3>
+                    <p><strong>Prioridade:</strong> Alta</p>
+                    <p><strong>Data de Vencimento:</strong> 30/10/2024</p>
+                    <p><strong>Responsável:</strong> João</p>
+                </div>
+            </div>
+            
+            <div class="Coluna" id="coluna2">
+                <h2>Em Progresso</h2>
+            </div>
+            
+            <div class="Coluna" id="coluna3">
+                <h2>Concluído</h2>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
