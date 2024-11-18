@@ -2,7 +2,7 @@ var sql = require ('mssql');
 var connSQLServer = function(){ 
  const sqlConfig = { 
  user: 'BD2311024', 
- password: 'Porkamae256', 
+ password: 'xxxxxxxxx', 
  database:'BD', 
  server: 'APOLO', 
  options:{ 
